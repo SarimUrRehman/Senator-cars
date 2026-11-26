@@ -1,0 +1,2314 @@
+<!doctype html>
+<html lang="en-NZ" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =======================================================================
+         SEO META TAGS & SOCIAL SHARING CARDS
+         CUSTOMIZE: Update canonical URL & og:image when deploying to your domain
+         ======================================================================= -->
+    <title>Senator Mobile Detailing | Premium Mobile Car Detailing NZ</title>
+    <meta
+      name="description"
+      content="Premium mobile car detailing delivered to your home or workplace in Auckland & surrounding areas. Exterior wash & wax, interior deep clean, paint correction, and ceramic coating."
+    />
+    <meta
+      name="keywords"
+      content="mobile car detailing Auckland, car detailing New Zealand, ceramic coating Auckland, paint correction NZ, interior car cleaning Auckland, Senator Mobile Detailing"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#050507" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NZ" />
+    <meta property="og:site_name" content="Senator Mobile Detailing" />
+    <meta property="og:title" content="Senator Mobile Detailing | Premium Mobile Car Detailing NZ" />
+    <meta
+      property="og:description"
+      content="Premium detailing, delivered to your door. Book exterior detailing, interior restoration, paint correction, or ceramic coating across Auckland."
+    />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Senator Mobile Detailing | Premium Mobile Car Detailing NZ" />
+    <meta
+      name="twitter:description"
+      content="Premium detailing, delivered to your door across Auckland & surrounding areas. Call +64 20 4081 0408."
+    />
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Senator Mobile Detailing",
+        "description": "Premium mobile car detailing delivered to your home or workplace in New Zealand.",
+        "slogan": "Premium detailing, delivered to your door.",
+        "telephone": "+64 20 4081 0408",
+        "email": "info@senatormobiledetailing.co.nz",
+        "priceRange": "$$",
+        "areaServed": {
+          "@type": "City",
+          "name": "Auckland",
+          "addressCountry": "NZ"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Auckland",
+          "addressCountry": "NZ"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "07:30",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts: Kaushan Script (Brand), Montserrat (Headings), Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kaushan+Script&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              obsidian: '#050507',
+              surface: '#0B0D13',
+              surfaceElevated: '#111520',
+              electric: '#1E6BFF',
+              cyanGlow: '#00A3FF',
+            },
+            fontFamily: {
+              script: ['"Kaushan Script"', 'cursive'],
+              heading: ['"Montserrat"', 'sans-serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --bg-obsidian: #050507;
+        --accent-blue: #1e6bff;
+        --accent-cyan: #00a3ff;
+      }
+
+      html {
+        background-color: #050507;
+        color: #f8fafc;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background-color: #050507;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+
+      /* Electric Blue Gradient Text & Borders */
+      .text-electric-gradient {
+        background: linear-gradient(135deg, #ffffff 10%, #00a3ff 55%, #1e6bff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .btn-electric {
+        background: linear-gradient(135deg, #1e6bff 0%, #00a3ff 100%);
+        box-shadow: 0 0 24px rgba(30, 107, 255, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1), filter 180ms ease;
+      }
+
+      .btn-electric:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 0 34px rgba(0, 163, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.32);
+        filter: brightness(1.06);
+      }
+
+      .btn-electric:active {
+        transform: translateY(0);
+      }
+
+      /* Subtle neon hairline card lift */
+      .card-automotive {
+        background: linear-gradient(180deg, rgba(17, 21, 32, 0.78) 0%, rgba(11, 13, 19, 0.94) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
+      }
+
+      .card-automotive:hover {
+        transform: translateY(-4px);
+        border-color: rgba(0, 163, 255, 0.42);
+        box-shadow: 0 18px 40px -16px rgba(0, 163, 255, 0.22);
+      }
+
+      .card-popular {
+        background: linear-gradient(180deg, rgba(20, 29, 51, 0.92) 0%, rgba(11, 14, 23, 0.98) 100%);
+        border: 1px solid rgba(0, 163, 255, 0.55);
+        box-shadow: 0 0 42px -12px rgba(30, 107, 255, 0.38);
+      }
+
+      /* Subtle speed-streak divider matching car silhouette aesthetic */
+      .streak-line {
+        height: 1px;
+        background: linear-gradient(90deg, transparent 0%, rgba(30, 107, 255, 0.45) 35%, rgba(0, 163, 255, 0.8) 50%, rgba(30, 107, 255, 0.45) 65%, transparent 100%);
+      }
+
+      /* Hero SVG glow filter */
+      .silhouette-glow {
+        filter: drop-shadow(0 0 14px rgba(0, 163, 255, 0.55)) drop-shadow(0 0 36px rgba(30, 107, 255, 0.32));
+      }
+
+      /* Fade-in on scroll animation (progressive enhancement: visible by default if JS disabled or reduced motion) */
+      .reveal {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 550ms cubic-bezier(0.16, 1, 0.3, 1), transform 550ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .js-reveal-ready .reveal:not(.is-visible) {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      .js-reveal-ready .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .reveal,
+        .card-automotive,
+        .btn-electric {
+          transition: none !important;
+          transform: none !important;
+          opacity: 1 !important;
+        }
+      }
+
+      /* Custom focus ring for keyboard navigation */
+      :focus-visible {
+        outline: 2px solid #00a3ff;
+        outline-offset: 2px;
+      }
+
+      /* Before / After slider cursor & selection guard */
+      .ba-container {
+        touch-action: pan-y;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-obsidian text-slate-100 antialiased selection:bg-electric/40 selection:text-white">
+    <!-- =====================================================================
+         1. STICKY NAVBAR
+         ===================================================================== -->
+    <header
+      id="top-navbar"
+      class="sticky top-0 z-50 border-b border-white/10 bg-obsidian/85 backdrop-blur-md"
+    >
+      <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+        <!-- Brand Logo -->
+        <a
+          href="#home"
+          class="group flex shrink-0 items-center gap-3 whitespace-nowrap rounded-md py-1"
+          aria-label="Senator Mobile Detailing Home"
+        >
+          <!-- CUSTOMIZE LOGO: Replace src="logo.png" with your uploaded logo file.
+               If logo.png is not yet uploaded, the inline SVG crest fallback displays automatically. -->
+          <img
+            src="logo.png"
+            alt="Senator Mobile Detailing Logo"
+            class="h-10 w-auto object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden flex items-center gap-2.5">
+            <svg
+              class="h-8 w-10 shrink-0 text-cyanGlow"
+              viewBox="0 0 64 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="navLogoGrad" x1="0" y1="18" x2="64" y2="18" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#1E6BFF" />
+                  <stop offset="100%" stop-color="#00A3FF" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M4 25C13 18 22 10 36 10C45 10 52 14 60 19"
+                stroke="url(#navLogoGrad)"
+                stroke-width="2.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M11 28H53"
+                stroke="url(#navLogoGrad)"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                opacity="0.7"
+              />
+            </svg>
+            <div class="leading-none">
+              <span class="font-script text-xl tracking-wide text-white">Senator</span>
+              <span class="block font-heading text-[9px] font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+                Mobile Detailing
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary Navigation" class="hidden items-center gap-6 lg:flex">
+          <a href="#home" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Home
+          </a>
+          <a href="#services" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Services
+          </a>
+          <a href="#packages" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Packages
+          </a>
+          <a href="#gallery" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Gallery
+          </a>
+          <a href="#why-us" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Why Us
+          </a>
+          <a href="#reviews" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Reviews
+          </a>
+          <a href="#contact" class="whitespace-nowrap text-sm font-medium text-slate-300 transition-colors hover:text-white">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Primary Action + Mobile Hamburger -->
+        <div class="flex shrink-0 items-center gap-3">
+          <a
+            href="#contact"
+            class="btn-electric inline-flex items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wider text-white sm:px-5 sm:py-2.5"
+          >
+            Book Now
+          </a>
+
+          <button
+            id="mobile-menu-toggle"
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-surface text-slate-200 transition-colors hover:border-cyanGlow/50 hover:text-white lg:hidden"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg id="menu-icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg id="menu-icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-white/10 bg-surface/95 px-4 pb-5 pt-3 backdrop-blur-lg lg:hidden"
+      >
+        <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1">
+          <a href="#home" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Home
+          </a>
+          <a href="#services" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Services
+          </a>
+          <a href="#packages" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Packages
+          </a>
+          <a href="#gallery" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Gallery
+          </a>
+          <a href="#why-us" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Why Us
+          </a>
+          <a href="#reviews" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Reviews
+          </a>
+          <a href="#contact" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-cyanGlow">
+            Contact
+          </a>
+          <div class="pt-3 border-t border-white/10 mt-2">
+            <a
+              href="tel:+642040810408"
+              class="flex items-center justify-center gap-2 rounded-lg border border-cyanGlow/40 bg-electric/10 px-4 py-2.5 text-sm font-semibold text-cyanGlow"
+            >
+              Call +64 20 4081 0408
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- =====================================================================
+           2. HERO SECTION
+           ===================================================================== -->
+      <section
+        id="home"
+        class="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden bg-obsidian py-16 sm:py-24"
+      >
+        <!-- Ambient Radial Studio Lighting -->
+        <div
+          class="pointer-events-none absolute -top-24 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
+          style="background: radial-gradient(circle, rgba(30, 107, 255, 0.48) 0%, rgba(0, 163, 255, 0.14) 45%, transparent 72%);"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-obsidian to-transparent"
+          aria-hidden="true"
+        ></div>
+
+        <div class="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+          <!-- Hero Copy Column -->
+          <div class="lg:col-span-7">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.28em] text-cyanGlow">
+              <!-- CUSTOMIZE SERVICE AREA -->
+              Mobile Detailing · Auckland &amp; Surrounding Areas
+            </p>
+
+            <h1
+              class="mt-4 font-heading text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
+              style="text-wrap: balance;"
+            >
+              We Bring the
+              <span class="text-electric-gradient">Shine</span>
+              to You
+            </h1>
+
+            <p class="mt-4 font-script text-xl text-cyanGlow/95 sm:text-2xl">
+              Premium detailing, delivered to your door.
+            </p>
+
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
+              Showroom-grade exterior washes, deep interior restorations, swirl-free paint correction, and long-life ceramic coatings — completed cleanly at your home or workplace anywhere in Auckland.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="#contact"
+                class="btn-electric inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-7 py-3.5 font-heading text-sm font-bold uppercase tracking-wider text-white"
+              >
+                Book a Detail
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </a>
+
+              <a
+                href="tel:+642040810408"
+                class="inline-flex items-center justify-center gap-2.5 whitespace-nowrap rounded-lg border border-white/20 bg-surface/80 px-6 py-3.5 font-heading text-sm font-semibold text-white transition-all hover:border-cyanGlow/60 hover:bg-surfaceElevated"
+              >
+                <svg class="h-4 w-4 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                Call Now
+              </a>
+            </div>
+
+            <!-- Trust Badges (Clean typographic strip, zero pill clutter) -->
+            <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-sm font-medium text-slate-300">
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                </svg>
+                <span>Fully Mobile</span>
+              </div>
+              <span class="hidden text-slate-600 sm:inline" aria-hidden="true">·</span>
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Fully Insured</span>
+              </div>
+              <span class="hidden text-slate-600 sm:inline" aria-hidden="true">·</span>
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <span>Satisfaction Guaranteed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Glowing Blue Car-Silhouette SVG Line Art -->
+          <div class="relative lg:col-span-5">
+            <div class="relative mx-auto max-w-xl">
+              <div
+                class="pointer-events-none absolute inset-0 rounded-full opacity-35 blur-2xl"
+                style="background: radial-gradient(ellipse at center, rgba(0, 163, 255, 0.35), transparent 70%);"
+                aria-hidden="true"
+              ></div>
+
+              <svg
+                class="silhouette-glow relative z-10 w-full h-auto"
+                viewBox="0 0 680 320"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Glowing electric blue luxury coupe car silhouette line art"
+              >
+                <defs>
+                  <linearGradient id="carStreakPrimary" x1="30" y1="160" x2="650" y2="160" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#1E6BFF" stop-opacity="0.1" />
+                    <stop offset="22%" stop-color="#1E6BFF" />
+                    <stop offset="65%" stop-color="#00A3FF" />
+                    <stop offset="100%" stop-color="#E0F2FE" />
+                  </linearGradient>
+                  <linearGradient id="carStreakAccent" x1="90" y1="190" x2="620" y2="190" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00A3FF" stop-opacity="0" />
+                    <stop offset="45%" stop-color="#1E6BFF" />
+                    <stop offset="100%" stop-color="#00A3FF" stop-opacity="0.9" />
+                  </linearGradient>
+                  <linearGradient id="floorGlow" x1="40" y1="255" x2="640" y2="255" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#1E6BFF" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#00A3FF" stop-opacity="0.7" />
+                    <stop offset="100%" stop-color="#1E6BFF" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Speed Streak Ambient Lines -->
+                <path d="M24 146C96 144 152 132 198 116" stroke="url(#carStreakAccent)" stroke-width="1.5" stroke-linecap="round" opacity="0.55" />
+                <path d="M10 176C75 176 112 172 152 164" stroke="url(#carStreakAccent)" stroke-width="1.2" stroke-linecap="round" opacity="0.35" />
+
+                <!-- Main Sculpted Roofline & Hood Silhouette -->
+                <path
+                  d="M72 204C90 198 122 188 156 174C198 140 250 96 342 94C414 92 464 114 510 144C554 150 598 160 628 176C638 182 642 192 640 206C638 216 626 222 608 223L572 224"
+                  stroke="url(#carStreakPrimary)"
+                  stroke-width="3.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <!-- Window Glass Line & Beltline -->
+                <path
+                  d="M214 148C254 116 300 108 352 108C404 108 446 122 480 146C424 148 330 152 214 148Z"
+                  stroke="url(#carStreakPrimary)"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                  opacity="0.88"
+                />
+                <path
+                  d="M174 182C258 170 398 168 518 176"
+                  stroke="url(#carStreakAccent)"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  opacity="0.72"
+                />
+
+                <!-- LED Headlight & Taillight Streaks -->
+                <path
+                  d="M578 184C596 184 614 186 626 192"
+                  stroke="#E0F2FE"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M84 196C98 192 114 188 128 186"
+                  stroke="#00A3FF"
+                  stroke-width="2.6"
+                  stroke-linecap="round"
+                />
+
+                <!-- Lower Rocker Panel & Wheel Arches -->
+                <path
+                  d="M84 224H126M236 226H460"
+                  stroke="url(#carStreakPrimary)"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+
+                <!-- Rear Wheel Arch & Rim Rings -->
+                <path
+                  d="M128 224C128 194 152 170 182 170C212 170 236 194 236 224"
+                  stroke="url(#carStreakPrimary)"
+                  stroke-width="2.8"
+                  stroke-linecap="round"
+                />
+                <circle cx="182" cy="224" r="38" stroke="url(#carStreakPrimary)" stroke-width="2.4" />
+                <circle cx="182" cy="224" r="22" stroke="#00A3FF" stroke-width="1.4" opacity="0.65" />
+                <circle cx="182" cy="224" r="6" fill="#00A3FF" />
+
+                <!-- Front Wheel Arch & Rim Rings -->
+                <path
+                  d="M462 224C462 194 486 170 516 170C546 170 570 194 570 224"
+                  stroke="url(#carStreakPrimary)"
+                  stroke-width="2.8"
+                  stroke-linecap="round"
+                />
+                <circle cx="516" cy="224" r="38" stroke="url(#carStreakPrimary)" stroke-width="2.4" />
+                <circle cx="516" cy="224" r="22" stroke="#00A3FF" stroke-width="1.4" opacity="0.65" />
+                <circle cx="516" cy="224" r="6" fill="#00A3FF" />
+
+                <!-- Ground Reflection Streak -->
+                <line x1="40" y1="264" x2="640" y2="264" stroke="url(#floorGlow)" stroke-width="2" />
+              </svg>
+
+              <!-- Compact Caption Strip Under Silhouette -->
+              <div class="mt-2 flex items-center justify-between px-4 text-xs text-slate-400">
+                <span class="font-heading uppercase tracking-[0.2em] text-slate-400">Self-Contained Mobile Unit</span>
+                <span class="font-medium text-cyanGlow">Home · Office · Driveway</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="streak-line mx-auto max-w-6xl" aria-hidden="true"></div>
+
+      <!-- =====================================================================
+           3. SERVICES SECTION (6 Cards)
+           ===================================================================== -->
+      <section id="services" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal max-w-2xl">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              Our Services
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl" style="text-wrap: balance;">
+              Precision Car Care at Your Doorstep
+            </h2>
+            <p class="mt-3 text-base text-slate-400">
+              Every service uses pH-neutral snow foams, plush microfibre wash mitts, and automotive-grade protection safe for clearcoats, trims, and leather.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Service 1 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Exterior Wash &amp; Wax</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  Pre-wash snow foam soak, two-bucket hand wash, deep wheel &amp; arch decontamination, and warm carnauba or SiO2 wax sealant for instant gloss.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Exterior Wash & Wax"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Exterior Wash
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4-8h8l4 8M6 16v3m12-3v3M8 12h8" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Interior Deep Clean</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  Thorough crevice vacuuming, steam sanitization of vents and plastics, hot-water upholstery extraction, and matte leather conditioning.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Interior Deep Clean"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Interior Clean
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.4 5.2L20 9l-4 4 1 5.6L12 16l-5 2.6 1-5.6-4-4 5.6-.8L12 3z" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Full Detail</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  Complete inside-and-out reset combining clay-bar paint decontamination, exterior wax protection, and full interior steam &amp; trim restoration.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Full Detail"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Full Detail
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="8" />
+                    <path stroke-linecap="round" d="M12 8v4l2.5 2.5" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Paint Correction &amp; Polish</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  Single- or multi-stage machine polishing to safely remove swirl marks, light scratches, and UV oxidation for deep mirror-like clarity.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Paint Correction & Polish"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Paint Correction
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <!-- Service 5 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Ceramic Coating</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  True SiO2 ceramic protection bonding to your clearcoat for multi-year UV defense, extreme hydrophobic water beading, and effortless washing.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Ceramic Coating"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Ceramic Coating
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <!-- Service 6 -->
+            <article class="reveal card-automotive flex flex-col justify-between rounded-2xl p-7">
+              <div>
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 21h4M12 3v1m6.36 1.64l-.7.7M21 12h-1M4 12H3m3.34-5.66l-.7-.7M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-heading text-xl font-bold text-white">Headlight Restoration</h3>
+                <p class="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  Multi-grit wet sanding, clarity compounding, and UV ceramic sealing to restore yellowed, hazy lenses for brighter night visibility and WOF safety.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-service="Headlight Restoration"
+                class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-cyanGlow transition-colors hover:text-white"
+              >
+                Book Headlight Restoration
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           4. PACKAGES / PRICING SECTION (3 Tiers in NZD)
+           CUSTOMIZE PRICES: Edit the NZD dollar figures below to match your rates
+           ===================================================================== -->
+      <section id="packages" class="relative bg-surface/50 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal mx-auto max-w-2xl text-center">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              Detailing Packages
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl" style="text-wrap: balance;">
+              Transparent Packages Built Around Your Vehicle
+            </h2>
+            <p class="mt-3 text-base text-slate-400">
+              Starting prices shown in NZD for hatchbacks and sedans. Larger SUVs, 4WDs, and utes include a small size adjustment confirmed upfront.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+            <!-- Tier 1: Essential -->
+            <div class="reveal card-automotive flex flex-col justify-between rounded-2xl p-8">
+              <div>
+                <div class="flex items-baseline justify-between">
+                  <h3 class="font-heading text-xl font-bold text-white">Essential</h3>
+                  <span class="text-xs font-medium text-slate-400">~1.5 – 2 hrs</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-400">
+                  Ideal for regular maintenance washes and keeping daily drivers crisp.
+                </p>
+                <!-- CUSTOMIZE PRICE -->
+                <div class="mt-6 flex items-baseline gap-1.5 border-b border-white/10 pb-6">
+                  <span class="font-heading text-4xl font-extrabold tabular-nums text-white">$149</span>
+                  <span class="text-sm font-medium text-slate-400">NZD · from</span>
+                </div>
+
+                <ul class="mt-6 space-y-3.5 text-sm text-slate-300">
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>pH-neutral snow foam &amp; two-bucket hand wash</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Wheel faces, barrels &amp; tyre satin dressing</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Full interior vacuum &amp; mat wipe-down</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Streak-free interior &amp; exterior glass</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Spray sealant for 6-week hydrophobic gloss</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="#contact"
+                data-select-service="Essential Package ($149 NZD)"
+                class="mt-8 inline-flex w-full items-center justify-center rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-heading text-sm font-semibold text-white transition-colors hover:border-cyanGlow/60 hover:bg-electric/15"
+              >
+                Select Essential
+              </a>
+            </div>
+
+            <!-- Tier 2: Premium (Most Popular) -->
+            <div class="reveal card-popular relative flex flex-col justify-between rounded-2xl p-8">
+              <div>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-heading text-xs font-bold uppercase tracking-[0.2em] text-cyanGlow">
+                    Most Popular
+                  </span>
+                  <span class="text-xs font-medium text-slate-300">~3.5 – 4 hrs</span>
+                </div>
+                <h3 class="mt-2 font-heading text-2xl font-bold text-white">Premium</h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Our signature full interior &amp; exterior reset for deep gloss and spotless cabins.
+                </p>
+                <!-- CUSTOMIZE PRICE -->
+                <div class="mt-6 flex items-baseline gap-1.5 border-b border-cyanGlow/25 pb-6">
+                  <span class="font-heading text-4xl font-extrabold tabular-nums text-white">$279</span>
+                  <span class="text-sm font-medium text-slate-300">NZD · from</span>
+                </div>
+
+                <ul class="mt-6 space-y-3.5 text-sm text-slate-200">
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Everything in Essential, plus clay bar &amp; iron decontamination</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>6-month SiO2 ceramic paint sealant</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Interior steam clean of vents, console &amp; door cards</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Seat &amp; carpet shampoo extraction or leather conditioning</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Door jambs, fuel cap &amp; exterior trim UV dressing</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="#contact"
+                data-select-service="Premium Package ($279 NZD)"
+                class="btn-electric mt-8 inline-flex w-full items-center justify-center rounded-lg px-5 py-3.5 font-heading text-sm font-bold uppercase tracking-wider text-white"
+              >
+                Book Premium Detail
+              </a>
+            </div>
+
+            <!-- Tier 3: Ultimate -->
+            <div class="reveal card-automotive flex flex-col justify-between rounded-2xl p-8">
+              <div>
+                <div class="flex items-baseline justify-between">
+                  <h3 class="font-heading text-xl font-bold text-white">Ultimate</h3>
+                  <span class="text-xs font-medium text-slate-400">~5 – 6 hrs</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-400">
+                  Showroom restoration with machine gloss enhancement and long-term protection.
+                </p>
+                <!-- CUSTOMIZE PRICE -->
+                <div class="mt-6 flex items-baseline gap-1.5 border-b border-white/10 pb-6">
+                  <span class="font-heading text-4xl font-extrabold tabular-nums text-white">$449</span>
+                  <span class="text-sm font-medium text-slate-400">NZD · from</span>
+                </div>
+
+                <ul class="mt-6 space-y-3.5 text-sm text-slate-300">
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Everything in Premium Detail included</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Single-stage machine polish to remove light swirls</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>12-month ceramic hybrid protection on paint &amp; glass</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Engine bay safe degrease &amp; satin dressing</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-4 w-4 shrink-0 text-cyanGlow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span>Odour elimination &amp; fabric stain guard</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="#contact"
+                data-select-service="Ultimate Package ($449 NZD)"
+                class="mt-8 inline-flex w-full items-center justify-center rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-heading text-sm font-semibold text-white transition-colors hover:border-cyanGlow/60 hover:bg-electric/15"
+              >
+                Select Ultimate
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           5. HOW IT WORKS (3 Steps)
+           ===================================================================== -->
+      <section id="how-it-works" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal max-w-2xl">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              How It Works
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Zero Waiting Rooms. Zero Drop-Offs.
+            </h2>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div class="reveal card-automotive rounded-2xl p-8">
+              <span class="font-heading text-sm font-bold tracking-widest text-cyanGlow">01.</span>
+              <h3 class="mt-3 font-heading text-xl font-bold text-white">Book Online</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Choose your package, enter your vehicle model, and pick a date and time that suits your schedule in less than a minute.
+              </p>
+            </div>
+
+            <div class="reveal card-automotive rounded-2xl p-8">
+              <span class="font-heading text-sm font-bold tracking-widest text-cyanGlow">02.</span>
+              <h3 class="mt-3 font-heading text-xl font-bold text-white">We Come to You</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Our self-contained mobile detailing van arrives right at your Auckland home, apartment driveway, or workplace car park.
+              </p>
+            </div>
+
+            <div class="reveal card-automotive rounded-2xl p-8">
+              <span class="font-heading text-sm font-bold tracking-widest text-cyanGlow">03.</span>
+              <h3 class="mt-3 font-heading text-xl font-bold text-white">Enjoy the Shine</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Do a final walk-around inspection with us and enjoy a spotless, protected vehicle without losing half your weekend.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="streak-line mx-auto max-w-6xl" aria-hidden="true"></div>
+
+      <!-- =====================================================================
+           6. BEFORE / AFTER GALLERY + INTERACTIVE DRAGGABLE SLIDER
+           CUSTOMIZE PHOTOS: Swap src paths below with your own detail photos
+           ===================================================================== -->
+      <section id="gallery" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div class="max-w-2xl">
+              <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+                Transformation Gallery
+              </p>
+              <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Real Before &amp; After Results
+              </h2>
+              <p class="mt-3 text-base text-slate-400">
+                Drag the slider handle left or right to inspect our swirl removal, paint depth, and interior restoration up close.
+              </p>
+            </div>
+
+            <!-- Interactive Comparison Switcher -->
+            <div class="inline-flex rounded-xl border border-white/10 bg-surface p-1" role="tablist" aria-label="Comparison view selector">
+              <button
+                type="button"
+                id="compare-tab-paint"
+                data-before="/src/assets/images/paint_correction_before_1795723540875.jpg"
+                data-after="/src/assets/images/paint_correction_after_1795723541459.jpg"
+                data-title="Paint Correction &amp; Ceramic Gloss"
+                class="compare-tab rounded-lg bg-electric px-4 py-2 font-heading text-xs font-semibold text-white transition-colors"
+                aria-selected="true"
+              >
+                Paint Correction
+              </button>
+              <button
+                type="button"
+                id="compare-tab-interior"
+                data-before="/src/assets/images/interior_clean_before_1795723541746.jpg"
+                data-after="/src/assets/images/interior_clean_after_1795723542389.jpg"
+                data-title="Interior Deep Clean &amp; Leather Care"
+                class="compare-tab rounded-lg px-4 py-2 font-heading text-xs font-semibold text-slate-400 transition-colors hover:text-white"
+                aria-selected="false"
+              >
+                Interior Deep Clean
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Draggable Before/After Comparison Slider -->
+          <div class="reveal mt-10">
+            <div
+              id="ba-slider"
+              class="ba-container relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/15 bg-surface shadow-2xl"
+            >
+              <!-- AFTER Image (Full Base Layer) -->
+              <img
+                id="ba-after-img"
+                src="/src/assets/images/paint_correction_after_1795723541459.jpg"
+                alt="After detailing: mirror-gloss ceramic coated finish"
+                class="h-full w-full object-cover"
+                referrerpolicy="no-referrer"
+              />
+
+              <!-- BEFORE Image (Clipped Layer) -->
+              <div
+                id="ba-before-layer"
+                class="absolute inset-0 overflow-hidden"
+                style="clip-path: inset(0 50% 0 0);"
+              >
+                <img
+                  id="ba-before-img"
+                  src="/src/assets/images/paint_correction_before_1795723540875.jpg"
+                  alt="Before detailing: swirled and dusty clearcoat"
+                  class="h-full w-full object-cover"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
+              <!-- Subtle Scrim Labels -->
+              <span class="pointer-events-none absolute left-4 top-4 rounded-md bg-black/75 px-3 py-1 font-heading text-xs font-semibold uppercase tracking-wider text-slate-200 backdrop-blur-sm">
+                Before
+              </span>
+              <span class="pointer-events-none absolute right-4 top-4 rounded-md bg-electric/90 px-3 py-1 font-heading text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
+                After
+              </span>
+
+              <!-- Vertical Divider Line & Draggable Handle -->
+              <div
+                id="ba-handle"
+                role="slider"
+                tabindex="0"
+                aria-label="Drag to compare before and after detailing results"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="50"
+                class="absolute inset-y-0 left-1/2 z-20 -ml-0.5 w-1 cursor-ew-resize bg-cyanGlow shadow-[0_0_16px_rgba(0,163,255,0.9)]"
+              >
+                <div
+                  class="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-electric text-white shadow-[0_0_24px_rgba(0,163,255,0.8)]"
+                >
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8 9-4 3 4 3m8-6 4 3-4 3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p id="ba-caption" class="mt-3 text-center text-xs font-medium tracking-wide text-slate-400">
+              Showing: Paint Correction &amp; Ceramic Gloss — Drag handle or use Left/Right arrow keys
+            </p>
+          </div>
+
+          <!-- Gallery Showcase Grid (3 Cards) -->
+          <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <figure class="reveal card-automotive overflow-hidden rounded-2xl">
+              <div class="relative aspect-[4/3] overflow-hidden bg-surfaceElevated">
+                <img
+                  src="/src/assets/images/paint_correction_after_1795723541459.jpg"
+                  alt="Deep metallic paint correction finish after two-stage polish"
+                  class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="hidden flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-surfaceElevated to-obsidian p-6 text-center">
+                  <span class="font-heading text-xs font-semibold uppercase tracking-widest text-cyanGlow">Before &amp; After Photo</span>
+                  <span class="mt-1 text-xs text-slate-400">Replace with your paint correction photo</span>
+                </div>
+              </div>
+              <figcaption class="p-5">
+                <p class="font-heading text-sm font-bold text-white">Swirl-Free Paint Correction</p>
+                <p class="mt-1 text-xs text-slate-400">Stage 1 &amp; 2 machine polish · European sedan</p>
+              </figcaption>
+            </figure>
+
+            <figure class="reveal card-automotive overflow-hidden rounded-2xl">
+              <div class="relative aspect-[4/3] overflow-hidden bg-surfaceElevated">
+                <img
+                  src="/src/assets/images/interior_clean_after_1795723542389.jpg"
+                  alt="Spotless conditioned black leather interior and carpets"
+                  class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="hidden flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-surfaceElevated to-obsidian p-6 text-center">
+                  <span class="font-heading text-xs font-semibold uppercase tracking-widest text-cyanGlow">Before &amp; After Photo</span>
+                  <span class="mt-1 text-xs text-slate-400">Replace with your interior detailing photo</span>
+                </div>
+              </div>
+              <figcaption class="p-5">
+                <p class="font-heading text-sm font-bold text-white">Interior Deep Restoration</p>
+                <p class="mt-1 text-xs text-slate-400">Steam sanitize &amp; matte leather care · Daily SUV</p>
+              </figcaption>
+            </figure>
+
+            <figure class="reveal card-automotive overflow-hidden rounded-2xl">
+              <div class="relative aspect-[4/3] overflow-hidden bg-surfaceElevated">
+                <img
+                  src="/src/assets/images/ceramic_beading_after_1795723542624.jpg"
+                  alt="Hydrophobic ceramic coating water beading on obsidian black hood"
+                  class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="hidden flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-surfaceElevated to-obsidian p-6 text-center">
+                  <span class="font-heading text-xs font-semibold uppercase tracking-widest text-cyanGlow">Ceramic Showcase Photo</span>
+                  <span class="mt-1 text-xs text-slate-400">Replace with your ceramic beading photo</span>
+                </div>
+              </div>
+              <figcaption class="p-5">
+                <p class="font-heading text-sm font-bold text-white">Hydrophobic Ceramic Shield</p>
+                <p class="mt-1 text-xs text-slate-400">9H SiO2 coating · Tight water beading protection</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           7. WHY CHOOSE US (Stats Counters + 4 Benefit Points)
+           ===================================================================== -->
+      <section id="why-us" class="bg-surface/50 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
+            <div class="lg:col-span-5">
+              <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+                Why Choose Senator
+              </p>
+              <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl" style="text-wrap: balance;">
+                Built for Drivers Who Care About Every Detail
+              </h2>
+              <p class="mt-4 text-base leading-relaxed text-slate-400">
+                We combine studio-grade equipment with true doorstep convenience. Whether your car is parked at home or at the office, we treat every panel like our own.
+              </p>
+
+              <!-- 3 Key Counters -->
+              <div class="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
+                <div>
+                  <div class="font-heading text-3xl font-extrabold tabular-nums text-white sm:text-4xl">
+                    <span class="stat-counter" data-target="500" data-suffix="+">500+</span>
+                  </div>
+                  <p class="mt-1 text-xs font-medium text-slate-400">Cars Detailed</p>
+                </div>
+                <div>
+                  <div class="font-heading text-3xl font-extrabold tabular-nums text-cyanGlow sm:text-4xl">
+                    <span>5.0</span><span class="text-2xl">★</span>
+                  </div>
+                  <p class="mt-1 text-xs font-medium text-slate-400">Client Rated</p>
+                </div>
+                <div>
+                  <div class="font-heading text-3xl font-extrabold tabular-nums text-white sm:text-4xl">
+                    <span class="stat-counter" data-target="100" data-suffix="%">100%</span>
+                  </div>
+                  <p class="mt-1 text-xs font-medium text-slate-400">Mobile Service</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Benefit Points -->
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:col-span-7">
+              <div class="card-automotive rounded-2xl p-6">
+                <h3 class="font-heading text-lg font-bold text-white">Self-Contained Van</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                  Onboard spot-free water tank and quiet power generation mean we can detail almost anywhere—even apartment or office car parks.
+                </p>
+              </div>
+
+              <div class="card-automotive rounded-2xl p-6">
+                <h3 class="font-heading text-lg font-bold text-white">Swirl-Safe Techniques</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                  Dedicated wheel buckets, fresh plush microfibres per vehicle, and pH-neutral shampoos protect delicate clearcoats and ceramic finishes.
+                </p>
+              </div>
+
+              <div class="card-automotive rounded-2xl p-6">
+                <h3 class="font-heading text-lg font-bold text-white">Fully Insured Care</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                  Comprehensive public liability and vehicle care coverage gives you complete peace of mind for daily drivers, luxury SUVs, and weekend classics.
+                </p>
+              </div>
+
+              <div class="card-automotive rounded-2xl p-6">
+                <h3 class="font-heading text-lg font-bold text-white">Upfront NZD Quotes</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                  Clear package rates before we begin, with zero surprise add-ons and easy payment via bank transfer, EFTPOS, or card on completion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           8. TESTIMONIALS CAROUSEL (3 Reviews)
+           ===================================================================== -->
+      <section id="reviews" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal text-center">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              Client Reviews
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Trusted Across Auckland
+            </h2>
+          </div>
+
+          <div class="reveal card-automotive relative mt-10 rounded-2xl p-8 sm:p-12">
+            <!-- Carousel Slides -->
+            <div id="testimonial-track" aria-live="polite">
+              <!-- Slide 0 -->
+              <div class="testimonial-slide">
+                <div class="flex items-center gap-1 text-cyanGlow" aria-label="5 out of 5 stars">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <blockquote class="mt-5 text-lg leading-relaxed text-slate-200 sm:text-xl">
+                  "Booked the Premium package while I was working from home in Remuera. My black Audi came up deeper and glossier than the day I picked it up from the dealership, and the interior smelt brand new."
+                </blockquote>
+                <div class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+                  <div>
+                    <p class="font-heading text-base font-bold text-white">James Thornton</p>
+                    <p class="text-xs text-slate-400">Audi S4 · Remuera, Auckland</p>
+                  </div>
+                  <span class="text-xs font-medium text-cyanGlow">Premium Detail Package</span>
+                </div>
+              </div>
+
+              <!-- Slide 1 -->
+              <div class="testimonial-slide hidden">
+                <div class="flex items-center gap-1 text-cyanGlow" aria-label="5 out of 5 stars">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <blockquote class="mt-5 text-lg leading-relaxed text-slate-200 sm:text-xl">
+                  "With two kids and weekend beach trips to Takapuna, our SUV seats were in rough shape. Senator arrived right on time, steamed every vent, and lifted every stain out of the rear carpet."
+                </blockquote>
+                <div class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+                  <div>
+                    <p class="font-heading text-base font-bold text-white">Sarah McKenzie</p>
+                    <p class="text-xs text-slate-400">Mazda CX-9 · Takapuna, North Shore</p>
+                  </div>
+                  <span class="text-xs font-medium text-cyanGlow">Interior Deep Clean</span>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-slide hidden">
+                <div class="flex items-center gap-1 text-cyanGlow" aria-label="5 out of 5 stars">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <blockquote class="mt-5 text-lg leading-relaxed text-slate-200 sm:text-xl">
+                  "Had a single-stage polish and ceramic coating done on my Ranger in my Mt Eden driveway. Water literally sheets straight off the bonnet now and washing takes ten minutes."
+                </blockquote>
+                <div class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+                  <div>
+                    <p class="font-heading text-base font-bold text-white">Liam Kerr</p>
+                    <p class="text-xs text-slate-400">Ford Ranger Wildtrak · Mt Eden, Auckland</p>
+                  </div>
+                  <span class="text-xs font-medium text-cyanGlow">Ultimate + Ceramic Coating</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="mt-8 flex items-center justify-between">
+              <div class="flex items-center gap-2" role="tablist" aria-label="Select testimonial">
+                <button
+                  type="button"
+                  class="testimonial-dot h-2.5 w-7 rounded-full bg-cyanGlow transition-all"
+                  data-slide="0"
+                  aria-label="Show review 1"
+                ></button>
+                <button
+                  type="button"
+                  class="testimonial-dot h-2.5 w-2.5 rounded-full bg-white/25 transition-all hover:bg-white/50"
+                  data-slide="1"
+                  aria-label="Show review 2"
+                ></button>
+                <button
+                  type="button"
+                  class="testimonial-dot h-2.5 w-2.5 rounded-full bg-white/25 transition-all hover:bg-white/50"
+                  data-slide="2"
+                  aria-label="Show review 3"
+                ></button>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button
+                  type="button"
+                  id="testimonial-prev"
+                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-obsidian text-slate-200 transition-colors hover:border-cyanGlow/60 hover:text-white"
+                  aria-label="Previous review"
+                >
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  id="testimonial-next"
+                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-obsidian text-slate-200 transition-colors hover:border-cyanGlow/60 hover:text-white"
+                  aria-label="Next review"
+                >
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           9. FAQ ACCORDION (5 Questions)
+           ===================================================================== -->
+      <section id="faq" class="bg-surface/50 py-20 sm:py-24">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal text-center">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              Common Questions
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          <div class="reveal mt-10 space-y-4">
+            <!-- FAQ 1 -->
+            <div class="card-automotive rounded-xl">
+              <button
+                type="button"
+                class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                aria-expanded="true"
+                aria-controls="faq-panel-1"
+              >
+                <span class="font-heading text-base font-semibold text-white">
+                  Do you need access to water or power on site?
+                </span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 rotate-180 text-cyanGlow transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div id="faq-panel-1" class="px-6 pb-5 text-sm leading-relaxed text-slate-400">
+                Our mobile detailing unit carries onboard spot-free water and quiet power so we can operate completely self-contained at most homes and workplaces. If an outdoor tap or power outlet happens to be available nearby, we're happy to plug in for multi-stage polishing jobs.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="card-automotive rounded-xl">
+              <button
+                type="button"
+                class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                aria-expanded="false"
+                aria-controls="faq-panel-2"
+              >
+                <span class="font-heading text-base font-semibold text-white">
+                  How long does a detail usually take?
+                </span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 text-cyanGlow transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div id="faq-panel-2" class="hidden px-6 pb-5 text-sm leading-relaxed text-slate-400">
+                An Essential detail typically takes 1.5 to 2 hours. Our Premium Full Detail runs around 3.5 to 4 hours, while Ultimate packages, paint correction, or ceramic coatings take 5 to 6+ hours depending on vehicle size and paint condition.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="card-automotive rounded-xl">
+              <button
+                type="button"
+                class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                aria-expanded="false"
+                aria-controls="faq-panel-3"
+              >
+                <span class="font-heading text-base font-semibold text-white">
+                  Which areas do you service?
+                </span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 text-cyanGlow transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div id="faq-panel-3" class="hidden px-6 pb-5 text-sm leading-relaxed text-slate-400">
+                <!-- CUSTOMIZE SERVICE AREA -->
+                We service Auckland &amp; surrounding areas—including Central Auckland, North Shore, East Auckland, West Auckland, and South Auckland—with zero call-out fee within our standard metro zone.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="card-automotive rounded-xl">
+              <button
+                type="button"
+                class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                aria-expanded="false"
+                aria-controls="faq-panel-4"
+              >
+                <span class="font-heading text-base font-semibold text-white">
+                  What happens if it rains on the day of my booking?
+                </span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 text-cyanGlow transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div id="faq-panel-4" class="hidden px-6 pb-5 text-sm leading-relaxed text-slate-400">
+                If you have a garage or covered carport, we can complete almost every service rain or shine. For open driveways during heavy rain, we'll contact you ahead of time to reschedule to the next clear slot at no charge.
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="card-automotive rounded-xl">
+              <button
+                type="button"
+                class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                aria-expanded="false"
+                aria-controls="faq-panel-5"
+              >
+                <span class="font-heading text-base font-semibold text-white">
+                  Are prices different for SUVs, 4WDs, or heavily soiled interiors?
+                </span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 text-cyanGlow transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div id="faq-panel-5" class="hidden px-6 pb-5 text-sm leading-relaxed text-slate-400">
+                Starting prices cover standard hatchbacks and sedans. Large 7-seater SUVs, utes, or vehicles with heavy pet hair or mud carry a modest surcharge that we confirm with you clearly before any work begins.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           10. CONTACT / BOOKING SECTION
+           ===================================================================== -->
+      <section id="contact" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal max-w-2xl">
+            <p class="font-heading text-xs font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+              Book Your Detail
+            </p>
+            <h2 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Schedule Your Mobile Appointment
+            </h2>
+            <p class="mt-3 text-base text-slate-400">
+              Send your vehicle details and preferred day below, or call us directly on <a href="tel:+642040810408" class="font-medium text-cyanGlow hover:underline">+64 20 4081 0408</a>.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12">
+            <!-- Booking Form -->
+            <div class="reveal card-automotive rounded-2xl p-6 sm:p-8 lg:col-span-7">
+              <form id="booking-form" novalidate class="space-y-5">
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="booking-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Full Name <span class="text-cyanGlow">*</span>
+                    </label>
+                    <input
+                      id="booking-name"
+                      name="name"
+                      type="text"
+                      required
+                      autocomplete="name"
+                      placeholder="e.g. Alex Taylor"
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                    />
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-name"></p>
+                  </div>
+
+                  <div>
+                    <label for="booking-phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Phone Number <span class="text-cyanGlow">*</span>
+                    </label>
+                    <input
+                      id="booking-phone"
+                      name="phone"
+                      type="tel"
+                      required
+                      autocomplete="tel"
+                      placeholder="e.g. 021 123 4567"
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                    />
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-phone"></p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="booking-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Email Address <span class="text-cyanGlow">*</span>
+                    </label>
+                    <input
+                      id="booking-email"
+                      name="email"
+                      type="email"
+                      required
+                      autocomplete="email"
+                      placeholder="you@example.co.nz"
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                    />
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-email"></p>
+                  </div>
+
+                  <div>
+                    <label for="booking-vehicle" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Vehicle Make &amp; Model <span class="text-cyanGlow">*</span>
+                    </label>
+                    <input
+                      id="booking-vehicle"
+                      name="vehicle"
+                      type="text"
+                      required
+                      placeholder="e.g. 2021 Toyota RAV4"
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                    />
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-vehicle"></p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="booking-service" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Service / Package <span class="text-cyanGlow">*</span>
+                    </label>
+                    <select
+                      id="booking-service"
+                      name="service"
+                      required
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white transition-colors focus:border-cyanGlow focus:outline-none"
+                    >
+                      <option value="">Select a package or service...</option>
+                      <option value="Essential Package ($149 NZD)">Essential Package ($149 NZD)</option>
+                      <option value="Premium Package ($279 NZD)">Premium Package ($279 NZD — Most Popular)</option>
+                      <option value="Ultimate Package ($449 NZD)">Ultimate Package ($449 NZD)</option>
+                      <option value="Exterior Wash & Wax">Exterior Wash &amp; Wax</option>
+                      <option value="Interior Deep Clean">Interior Deep Clean</option>
+                      <option value="Full Detail">Full Detail</option>
+                      <option value="Paint Correction & Polish">Paint Correction &amp; Polish</option>
+                      <option value="Ceramic Coating">Ceramic Coating</option>
+                      <option value="Headlight Restoration">Headlight Restoration</option>
+                    </select>
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-service"></p>
+                  </div>
+
+                  <div>
+                    <label for="booking-date" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                      Preferred Date <span class="text-cyanGlow">*</span>
+                    </label>
+                    <input
+                      id="booking-date"
+                      name="date"
+                      type="date"
+                      required
+                      class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white transition-colors [color-scheme:dark] focus:border-cyanGlow focus:outline-none"
+                    />
+                    <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-date"></p>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="booking-address" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Suburb / Street Address <span class="text-cyanGlow">*</span>
+                  </label>
+                  <input
+                    id="booking-address"
+                    name="address"
+                    type="text"
+                    required
+                    autocomplete="street-address"
+                    placeholder="e.g. Ponsonby, Auckland (Home driveway or workplace)"
+                    class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                  />
+                  <p class="field-error mt-1 hidden text-xs text-rose-400" id="error-address"></p>
+                </div>
+
+                <div>
+                  <label for="booking-message" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Additional Notes (Optional)
+                  </label>
+                  <textarea
+                    id="booking-message"
+                    name="message"
+                    rows="3"
+                    placeholder="Any pet hair, stains, access instructions, or preferred morning/afternoon window..."
+                    class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder-slate-500 transition-colors focus:border-cyanGlow focus:outline-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-electric inline-flex w-full items-center justify-center gap-2 rounded-lg px-6 py-4 font-heading text-sm font-bold uppercase tracking-wider text-white"
+                >
+                  Request Booking
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+
+                <!-- Success Confirmation Box -->
+                <div
+                  id="booking-success"
+                  role="status"
+                  aria-live="polite"
+                  class="hidden rounded-xl border border-emerald-500/40 bg-emerald-950/40 p-5 text-sm text-emerald-100"
+                >
+                  <div class="flex items-start gap-3">
+                    <svg class="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" />
+                    </svg>
+                    <div>
+                      <p class="font-heading font-bold text-white">Booking Request Prepared!</p>
+                      <p class="mt-1 text-slate-300">
+                        Your email app should open with your pre-filled booking summary to <span class="font-medium text-white">info@senatormobiledetailing.co.nz</span>. If it didn't open automatically, click below or call us on <a href="tel:+642040810408" class="underline text-cyanGlow">+64 20 4081 0408</a>.
+                      </p>
+                      <a
+                        id="booking-mailto-fallback"
+                        href="mailto:info@senatormobiledetailing.co.nz"
+                        class="mt-3 inline-flex items-center gap-1.5 font-heading text-xs font-semibold uppercase tracking-wider text-cyanGlow underline"
+                      >
+                        Open Pre-filled Email Draft &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Information Panel -->
+            <aside class="reveal flex flex-col justify-between gap-6 lg:col-span-5">
+              <div class="card-automotive rounded-2xl p-8 space-y-6">
+                <div>
+                  <h3 class="font-heading text-xl font-bold text-white">Direct Contact</h3>
+                  <p class="mt-1 text-sm text-slate-400">
+                    Prefer to text, WhatsApp, or call for an instant quote? Reach us directly.
+                  </p>
+                </div>
+
+                <div class="space-y-5 border-t border-white/10 pt-6 text-sm">
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Phone</p>
+                      <a href="tel:+642040810408" class="mt-0.5 block font-heading text-base font-bold text-white hover:text-cyanGlow">
+                        +64 20 4081 0408
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Email</p>
+                      <a href="mailto:info@senatormobiledetailing.co.nz" class="mt-0.5 block break-all font-medium text-white hover:text-cyanGlow">
+                        info@senatormobiledetailing.co.nz
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Service Area</p>
+                      <!-- CUSTOMIZE SERVICE AREA -->
+                      <p class="mt-0.5 font-medium text-white">Auckland &amp; surrounding areas, NZ</p>
+                      <p class="mt-0.5 text-xs text-slate-400">Mobile — we come to your home or workplace</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-cyanGlow/30 bg-electric/15 text-cyanGlow">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path stroke-linecap="round" d="M12 6v6l4 2" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Business Hours</p>
+                      <p class="mt-0.5 font-medium text-white">Mon – Sat: 7:30am – 6:00pm</p>
+                      <p class="mt-0.5 text-xs text-slate-400">Sunday: By prior appointment</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick WhatsApp Card -->
+              <a
+                href="https://wa.me/642040810408?text=Hi%20Senator%20Mobile%20Detailing%2C%20I%27d%20like%20to%20book%20a%20detail."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-automotive flex items-center justify-between rounded-2xl p-6 hover:border-emerald-400/50"
+              >
+                <div class="flex items-center gap-4">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.81 14.12c-.24.68-1.42 1.31-1.97 1.39-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.91-4.27-5.06-4.47-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.84 2.05.91 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.14 1.02 2.11 1.33 2.41 1.48.3.15.48.12.66-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.96.3.15.5.22.57.35.07.12.07.72-.17 1.4z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-heading text-sm font-bold text-white">Message Us on WhatsApp</p>
+                    <p class="text-xs text-slate-400">Fast replies &amp; photo quotes for your vehicle</p>
+                  </div>
+                </div>
+                <span class="text-sm font-semibold text-emerald-400" aria-hidden="true">&rarr;</span>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         11. FOOTER
+         ===================================================================== -->
+    <footer class="border-t border-white/10 bg-surface/80 pb-20 pt-14 md:pb-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-12">
+          <!-- Brand Column -->
+          <div class="md:col-span-5">
+            <a href="#home" class="inline-flex items-center gap-3">
+              <!-- CUSTOMIZE LOGO: Replace src="logo.png" with your uploaded logo file -->
+              <img
+                src="logo.png"
+                alt="Senator Mobile Detailing Logo"
+                class="h-11 w-auto object-contain"
+                onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+              />
+              <div class="hidden flex items-center gap-2.5">
+                <svg
+                  class="h-8 w-10 shrink-0 text-cyanGlow"
+                  viewBox="0 0 64 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M4 25C13 18 22 10 36 10C45 10 52 14 60 19" stroke="#00A3FF" stroke-width="2.6" stroke-linecap="round" />
+                  <path d="M11 28H53" stroke="#1E6BFF" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+                </svg>
+                <div class="leading-none">
+                  <span class="font-script text-2xl text-white">Senator</span>
+                  <span class="block font-heading text-[9px] font-semibold uppercase tracking-[0.26em] text-cyanGlow">
+                    Mobile Detailing
+                  </span>
+                </div>
+              </div>
+            </a>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
+              Premium detailing, delivered to your door. Serving Auckland &amp; surrounding areas with fully self-contained mobile vehicle care.
+            </p>
+
+            <!-- Social Links (CUSTOMIZE SOCIAL LINKS: Replace # with your profile URLs) -->
+            <div class="mt-6 flex items-center gap-3">
+              <a
+                href="#contact"
+                aria-label="Senator Mobile Detailing on Facebook"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-obsidian text-slate-300 transition-colors hover:border-cyanGlow/60 hover:text-cyanGlow"
+              >
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M13.5 9H16V6h-2.5C11.57 6 10 7.57 10 9.5V11H8v3h2v7h3v-7h2.3l.7-3H13v-1.5c0-.28.22-.5.5-.5z" />
+                </svg>
+              </a>
+              <a
+                href="#contact"
+                aria-label="Senator Mobile Detailing on Instagram"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-obsidian text-slate-300 transition-colors hover:border-cyanGlow/60 hover:text-cyanGlow"
+              >
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect width="18" height="18" x="3" y="3" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="#contact"
+                aria-label="Senator Mobile Detailing on TikTok"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-obsidian text-slate-300 transition-colors hover:border-cyanGlow/60 hover:text-cyanGlow"
+              >
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="md:col-span-3">
+            <h4 class="font-heading text-xs font-bold uppercase tracking-[0.2em] text-white">Quick Links</h4>
+            <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+              <li><a href="#home" class="hover:text-cyanGlow transition-colors">Home</a></li>
+              <li><a href="#services" class="hover:text-cyanGlow transition-colors">Services</a></li>
+              <li><a href="#packages" class="hover:text-cyanGlow transition-colors">Packages &amp; Pricing</a></li>
+              <li><a href="#gallery" class="hover:text-cyanGlow transition-colors">Before &amp; After Gallery</a></li>
+              <li><a href="#faq" class="hover:text-cyanGlow transition-colors">FAQ</a></li>
+              <li><a href="#contact" class="hover:text-cyanGlow transition-colors">Book Now</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="md:col-span-4">
+            <h4 class="font-heading text-xs font-bold uppercase tracking-[0.2em] text-white">Contact</h4>
+            <ul class="mt-4 space-y-3 text-sm text-slate-400">
+              <li>
+                <a href="tel:+642040810408" class="font-medium text-white hover:text-cyanGlow transition-colors">
+                  +64 20 4081 0408
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@senatormobiledetailing.co.nz" class="break-all hover:text-cyanGlow transition-colors">
+                  info@senatormobiledetailing.co.nz
+                </a>
+              </li>
+              <li>Auckland &amp; surrounding areas, New Zealand</li>
+              <li>Mon – Sat: 7:30am – 6:00pm</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">
+          <p>&copy; 2026 Senator Mobile Detailing. All rights reserved.</p>
+          <p>Mobile Car Detailing · New Zealand</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================================
+         FLOATING QUICK ACTION BUTTONS (Bottom Right)
+         - WhatsApp Quick Contact (Desktop & Mobile)
+         - Floating "Call Now" on Mobile
+         ===================================================================== -->
+    <div class="fixed bottom-4 right-4 z-40 flex items-center gap-2.5">
+      <a
+        href="https://wa.me/642040810408?text=Hi%20Senator%20Mobile%20Detailing%2C%20I%27d%20like%20a%20quote."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-emerald-400/50 bg-emerald-600 text-white shadow-lg shadow-emerald-950/60 transition-transform hover:scale-105"
+      >
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.81 14.12c-.24.68-1.42 1.31-1.97 1.39-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.91-4.27-5.06-4.47-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.84 2.05.91 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.66 2.06 1.14 1.02 2.11 1.33 2.41 1.48.3.15.48.12.66-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.96.3.15.5.22.57.35.07.12.07.72-.17 1.4z" />
+        </svg>
+      </a>
+
+      <a
+        href="tel:+642040810408"
+        class="btn-electric inline-flex h-11 items-center gap-2 rounded-full px-4 font-heading text-xs font-bold uppercase tracking-wider text-white md:hidden"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Call Now
+      </a>
+    </div>
+
+    <!-- =====================================================================
+         VANILLA JAVASCRIPT INTERACTIVITY
+         ===================================================================== -->
+    <script>
+      (function () {
+        'use strict';
+
+        // -------------------------------------------------------------------
+        // 1. Mobile Navigation Menu Toggle
+        // -------------------------------------------------------------------
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function setMenuState(open) {
+          if (!mobileMenu || !menuToggle) return;
+          mobileMenu.classList.toggle('hidden', !open);
+          menuToggle.setAttribute('aria-expanded', String(open));
+          if (iconOpen && iconClose) {
+            iconOpen.classList.toggle('hidden', open);
+            iconClose.classList.toggle('hidden', !open);
+          }
+        }
+
+        if (menuToggle && mobileMenu) {
+          menuToggle.addEventListener('click', function () {
+            const isOpen = mobileMenu.classList.contains('hidden');
+            setMenuState(isOpen);
+          });
+
+          mobileNavLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+              setMenuState(false);
+            });
+          });
+        }
+
+        // -------------------------------------------------------------------
+        // 2. Fade-in-on-Scroll Observer
+        // -------------------------------------------------------------------
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealEls = document.querySelectorAll('.reveal');
+
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+          document.documentElement.classList.add('js-reveal-ready');
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
+          );
+
+          revealEls.forEach(function (el) {
+            observer.observe(el);
+          });
+        }
+
+        // -------------------------------------------------------------------
+        // 3. Before / After Draggable Slider + Preset Tabs
+        // -------------------------------------------------------------------
+        const slider = document.getElementById('ba-slider');
+        const beforeLayer = document.getElementById('ba-before-layer');
+        const handle = document.getElementById('ba-handle');
+        const beforeImg = document.getElementById('ba-before-img');
+        const afterImg = document.getElementById('ba-after-img');
+        const caption = document.getElementById('ba-caption');
+        const compareTabs = document.querySelectorAll('.compare-tab');
+
+        let sliderPercent = 50;
+        let isDragging = false;
+
+        function updateSlider(percent) {
+          sliderPercent = Math.max(2, Math.min(98, percent));
+          if (beforeLayer) {
+            beforeLayer.style.clipPath = 'inset(0 ' + (100 - sliderPercent) + '% 0 0)';
+          }
+          if (handle) {
+            handle.style.left = sliderPercent + '%';
+            handle.setAttribute('aria-valuenow', String(Math.round(sliderPercent)));
+          }
+        }
+
+        function setSliderFromClientX(clientX) {
+          if (!slider) return;
+          const rect = slider.getBoundingClientRect();
+          const percent = ((clientX - rect.left) / rect.width) * 100;
+          updateSlider(percent);
+        }
+
+        if (slider && handle) {
+          slider.addEventListener('pointerdown', function (e) {
+            isDragging = true;
+            setSliderFromClientX(e.clientX);
+          });
+
+          window.addEventListener('pointermove', function (e) {
+            if (!isDragging) return;
+            setSliderFromClientX(e.clientX);
+          });
+
+          window.addEventListener('pointerup', function () {
+            isDragging = false;
+          });
+
+          handle.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              updateSlider(sliderPercent - 4);
+            } else if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              updateSlider(sliderPercent + 4);
+            }
+          });
+        }
+
+        compareTabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            compareTabs.forEach(function (t) {
+              t.classList.remove('bg-electric', 'text-white');
+              t.classList.add('text-slate-400');
+              t.setAttribute('aria-selected', 'false');
+            });
+
+            tab.classList.add('bg-electric', 'text-white');
+            tab.classList.remove('text-slate-400');
+            tab.setAttribute('aria-selected', 'true');
+
+            if (beforeImg && tab.dataset.before) beforeImg.src = tab.dataset.before;
+            if (afterImg && tab.dataset.after) afterImg.src = tab.dataset.after;
+            if (caption && tab.dataset.title) {
+              caption.textContent = 'Showing: ' + tab.dataset.title + ' — Drag handle or use Left/Right arrow keys';
+            }
+            updateSlider(50);
+          });
+        });
+
+        // -------------------------------------------------------------------
+        // 4. Stats Counter Animation on Scroll
+        // -------------------------------------------------------------------
+        const counters = document.querySelectorAll('.stat-counter');
+        if (!prefersReducedMotion && 'IntersectionObserver' in window && counters.length) {
+          const counterObserver = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = parseInt(el.dataset.target || '0', 10);
+                const suffix = el.dataset.suffix || '';
+                const duration = 900;
+                const start = performance.now();
+
+                function tick(now) {
+                  const progress = Math.min((now - start) / duration, 1);
+                  const eased = 1 - Math.pow(1 - progress, 3);
+                  el.textContent = Math.round(target * eased) + suffix;
+                  if (progress < 1) {
+                    requestAnimationFrame(tick);
+                  }
+                }
+                requestAnimationFrame(tick);
+                counterObserver.unobserve(el);
+              });
+            },
+            { threshold: 0.4 }
+          );
+
+          counters.forEach(function (c) {
+            counterObserver.observe(c);
+          });
+        }
+
+        // -------------------------------------------------------------------
+        // 5. Testimonials Carousel
+        // -------------------------------------------------------------------
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        const prevBtn = document.getElementById('testimonial-prev');
+        const nextBtn = document.getElementById('testimonial-next');
+        let activeSlide = 0;
+
+        function showSlide(index) {
+          if (!slides.length) return;
+          activeSlide = (index + slides.length) % slides.length;
+
+          slides.forEach(function (slide, idx) {
+            slide.classList.toggle('hidden', idx !== activeSlide);
+          });
+
+          dots.forEach(function (dot, idx) {
+            if (idx === activeSlide) {
+              dot.classList.add('w-7', 'bg-cyanGlow');
+              dot.classList.remove('w-2.5', 'bg-white/25');
+            } else {
+              dot.classList.remove('w-7', 'bg-cyanGlow');
+              dot.classList.add('w-2.5', 'bg-white/25');
+            }
+          });
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function () {
+            showSlide(activeSlide - 1);
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function () {
+            showSlide(activeSlide + 1);
+          });
+        }
+        dots.forEach(function (dot) {
+          dot.addEventListener('click', function () {
+            showSlide(parseInt(dot.dataset.slide || '0', 10));
+          });
+        });
+
+        // -------------------------------------------------------------------
+        // 6. FAQ Accordion
+        // -------------------------------------------------------------------
+        const faqTriggers = document.querySelectorAll('.faq-trigger');
+        faqTriggers.forEach(function (trigger) {
+          trigger.addEventListener('click', function () {
+            const panelId = trigger.getAttribute('aria-controls');
+            const panel = panelId ? document.getElementById(panelId) : null;
+            const chevron = trigger.querySelector('.faq-chevron');
+            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+            trigger.setAttribute('aria-expanded', String(!isExpanded));
+            if (panel) panel.classList.toggle('hidden', isExpanded);
+            if (chevron) chevron.classList.toggle('rotate-180', !isExpanded);
+          });
+        });
+
+        // -------------------------------------------------------------------
+        // 7. Service / Package Pre-selection into Booking Form
+        // -------------------------------------------------------------------
+        const serviceSelect = document.getElementById('booking-service');
+        document.querySelectorAll('[data-select-service]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            if (!serviceSelect) return;
+            const value = btn.getAttribute('data-select-service');
+            if (value) {
+              serviceSelect.value = value;
+            }
+          });
+        });
+
+        // Set minimum date on date picker to today
+        const dateInput = document.getElementById('booking-date');
+        if (dateInput) {
+          const today = new Date().toISOString().split('T')[0];
+          dateInput.setAttribute('min', today);
+        }
+
+        // -------------------------------------------------------------------
+        // 8. Booking Form Client-Side Validation & Pre-filled Mailto Fallback
+        // -------------------------------------------------------------------
+        const bookingForm = document.getElementById('booking-form');
+        const bookingSuccess = document.getElementById('booking-success');
+        const mailtoFallback = document.getElementById('booking-mailto-fallback');
+
+        function setFieldError(id, message) {
+          const errorEl = document.getElementById('error-' + id);
+          const inputEl = document.getElementById('booking-' + id);
+          if (!errorEl || !inputEl) return;
+          if (message) {
+            errorEl.textContent = message;
+            errorEl.classList.remove('hidden');
+            inputEl.classList.add('border-rose-500');
+          } else {
+            errorEl.textContent = '';
+            errorEl.classList.add('hidden');
+            inputEl.classList.remove('border-rose-500');
+          }
+        }
+
+        if (bookingForm) {
+          bookingForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('booking-name').value.trim();
+            const phone = document.getElementById('booking-phone').value.trim();
+            const email = document.getElementById('booking-email').value.trim();
+            const vehicle = document.getElementById('booking-vehicle').value.trim();
+            const service = document.getElementById('booking-service').value.trim();
+            const date = document.getElementById('booking-date').value.trim();
+            const address = document.getElementById('booking-address').value.trim();
+            const message = document.getElementById('booking-message').value.trim();
+
+            let valid = true;
+
+            if (name.length < 2) {
+              setFieldError('name', 'Please enter your name.');
+              valid = false;
+            } else {
+              setFieldError('name', '');
+            }
+
+            if (phone.replace(/\D/g, '').length < 7) {
+              setFieldError('phone', 'Please enter a valid NZ phone number.');
+              valid = false;
+            } else {
+              setFieldError('phone', '');
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              setFieldError('email', 'Please enter a valid email address.');
+              valid = false;
+            } else {
+              setFieldError('email', '');
+            }
+
+            if (vehicle.length < 2) {
+              setFieldError('vehicle', 'Please enter your vehicle make and model.');
+              valid = false;
+            } else {
+              setFieldError('vehicle', '');
+            }
+
+            if (!service) {
+              setFieldError('service', 'Please select a service or package.');
+              valid = false;
+            } else {
+              setFieldError('service', '');
+            }
+
+            if (!date) {
+              setFieldError('date', 'Please choose a preferred date.');
+              valid = false;
+            } else {
+              setFieldError('date', '');
+            }
+
+            if (address.length < 4) {
+              setFieldError('address', 'Please enter your suburb or street address.');
+              valid = false;
+            } else {
+              setFieldError('address', '');
+            }
+
+            if (!valid) return;
+
+            const subject = 'Mobile Detailing Booking Request — ' + service + ' (' + vehicle + ')';
+            const bodyLines = [
+              'Hi Senator Mobile Detailing,',
+              '',
+              'I would like to request a mobile detailing booking:',
+              '',
+              'Name: ' + name,
+              'Phone: ' + phone,
+              'Email: ' + email,
+              'Vehicle: ' + vehicle,
+              'Service / Package: ' + service,
+              'Preferred Date: ' + date,
+              'Suburb / Address: ' + address,
+              'Additional Notes: ' + (message || 'None'),
+            ];
+
+            const mailtoUrl =
+              'mailto:info@senatormobiledetailing.co.nz?subject=' +
+              encodeURIComponent(subject) +
+              '&body=' +
+              encodeURIComponent(bodyLines.join('\n'));
+
+            if (mailtoFallback) {
+              mailtoFallback.setAttribute('href', mailtoUrl);
+            }
+
+            if (bookingSuccess) {
+              bookingSuccess.classList.remove('hidden');
+              bookingSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            window.location.href = mailtoUrl;
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

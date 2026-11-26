@@ -1,0 +1,6 @@
+{
+  "name": "Senator Mobile Detailing",
+  "description": "Premium mobile car detailing delivered to your home or workplace across Auckland and surrounding areas, New Zealand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
